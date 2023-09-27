@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #7c3aed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero > input {
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 40%;
+    font-size: large;
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+#area-btn, #hypotenuse-btn, #check-ans-btn, #is-triangle-btn {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    transition: all 0.04s ease;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#area-btn:hover, #hypotenuse-btn:hover, #check-ans-btn:hover, #is-triangle-btn:hover {
+    border-color: #000;
+    border-width: 3px;
+    border-radius: 12px;
+}
+
+#output {
+    text-align: center;
+    padding: 2rem;
+}
